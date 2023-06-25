@@ -17,5 +17,6 @@ jobs:
         with:
           spark-version: '3.2.1'
           hadoop-version: '3.2'
+      - run: pip install pyspark
       - run: python main.py
       - run: spark-submit --version
